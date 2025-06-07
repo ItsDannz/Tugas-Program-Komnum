@@ -9,6 +9,7 @@
 | 5025241117 | Hazza Danta Hermandanu |
 | 5025241123 | Cornelius Andika |
 
+<br>
 
 #### Full Code
 ```bash
@@ -55,6 +56,7 @@ xt = -3
 bagi_dua(xl, xu, xt)
 
 ```
+
 <br>
 
 #### Penjelasan
@@ -62,6 +64,8 @@ bagi_dua(xl, xu, xt)
 from decimal import Decimal, ROUND_HALF_UP
 ```
 Untuk mengimpor Decimal yang digunakan untuk representasi bilangan desimal dan `ROUND_HALF_UP` yang digunakan untuk pembulatan
+
+<br>
 
 ```bash
 def pembulatan(x):
@@ -72,11 +76,15 @@ Membuat fungsi pembulatan :
 - Menyesuaikan jumlah angka di belakang `,` dengan `.quantize(Decimal('0.01')` agar pembulatannya 2 angka dibelakang `,`
 - `rounding=ROUND_HALF_UP` digunakan untuk menentukan aturan pembulatan dimana jika digit ke-tiga >= 5 akan dibulatkan ke-atas, sedangkan jika digit ke-tiga < 5 akan dibulatkan ke bawah
 
+<br>
+
 ```bash
 def f(x):
     return x**3 + 6*x**2 - 19*x - 84
 ```
 - Fungsi dari soal
+
+<br>
 
 ```bash
 def bagi_dua(xl, xu, xt):
