@@ -60,14 +60,14 @@ bagi_dua(xl, xu, xt)
 <br>
 
 #### Penjelasan
-```bash
+```python
 from decimal import Decimal, ROUND_HALF_UP
 ```
 Untuk mengimpor Decimal yang digunakan untuk representasi bilangan desimal dan `ROUND_HALF_UP` yang digunakan untuk pembulatan
 
 <br>
 
-```bash
+```python
 def pembulatan(x):
     return Decimal(str(x)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
 ```
@@ -78,7 +78,7 @@ Membuat fungsi pembulatan :
 
 <br>
 
-```bash
+```python
 def f(x):
     return x**3 + 6*x**2 - 19*x - 84
 ```
@@ -86,7 +86,7 @@ def f(x):
 
 <br>
 
-```bash
+```python
 def bagi_dua(xl, xu, xt):
     iterasi = 1
     print("Iterasi\t\tXL\t\tXU\t\tXR\t\tf(XR)\t\tEt(%)")
