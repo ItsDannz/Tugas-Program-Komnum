@@ -12,7 +12,7 @@
 <br>
 
 #### Full Code
-```bash
+```python
 from decimal import Decimal, ROUND_HALF_UP
 
 def pembulatan(x):
