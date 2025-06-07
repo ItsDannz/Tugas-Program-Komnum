@@ -1,5 +1,5 @@
 # Tugas-Program-Komnum
-**Anggota Kelompok 
+### Anggota Kelompok 
 
 |    NRP     |      Name      |
 | :--------: | :------------: |
