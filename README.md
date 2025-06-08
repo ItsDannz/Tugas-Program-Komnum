@@ -82,7 +82,7 @@ Membuat fungsi pembulatan :
 def f(x):
     return x**3 + 6*x**2 - 19*x - 84
 ```
-- Fungsi dari soal
+Fungsi dari soal
 
 <br>
 
@@ -115,3 +115,61 @@ def bagi_dua(xl, xu, xt):
 
     print("\nAkar X =", f"{xr_pembulatan}")
 ```
+Fungsi untuk perhitungan metode bagi dua
+- `iterasi = 1`, iterasi dimuali dari 1
+- ``` python
+  while True:
+        xr = (xl + xu) / 2
+
+        xr_pembulatan = pembulatan(xr)
+        fxr_pembulatan = pembulatan(f(xr_pembulatan))
+  ```
+  - Menjalankan perulangan while
+  - Menghitung nilai xr dengan rumus `xr = (xl + xu) / 2`
+  - Melakukan pembulatan xr dan f(xr) 2 angka di belakang `,` dengan memanggil fungsi pembulatan
+- ``` python
+      et = abs((xt - xr_pembulatan) / xt) * 100
+      et_pembulatan = pembulatan(et)
+  ```
+  - Menghitung nilai Et dengan `abs` agar nilainya selalu positif, lalu kali dengan 100
+  - Melakukan pembulatan Et 2 angka di belakang `,` dengan memanggil fungsi pembulatan
+- ``` python
+  print(f"{iterasi}\t\t{xl:.2f}\t\t{xu:.2f}\t\t{xr_pembulatan}\t\t{fxr_pembulatan}\t\t{et_pembulatan}")
+  ```
+  Print xl, xu, xr, f(xr), dan Et dari iterasi ke i
+- ``` python
+  if et < 1 and et >= 0:
+            break
+  ```
+  Saat 0 >= Et > 1, maka keluar dari perulangan dengan `break`
+- ``` python
+  if f(xl) * f(xr_pembulatan) < 0:
+            xu = xr_pembulatan
+        else:
+            xl = xr_pembulatan
+
+        iterasi += 1
+  ```
+  - Jika f(xl) * f(xr) < 0, maka xu = xr
+  - Jika kondisi tidak terpenuhi maka xl = xr
+  - Berallih ke iterasai selanjutnya dengan menambah jumlah iterasi sebanyak 1
+- ``` python
+  print("\nAkar X =", f"{xr_pembulatan}")
+  ```
+  Print akar dari x yaitu xr
+
+<br>
+
+``` python
+xl = -4
+xu = 3
+xt = -3
+```
+Diketahui dari soal
+
+<br>
+
+```python
+bagi_dua(xl, xu, xt)
+```
+Memanggil fungsi `bagi_dua` untuk memulai perhitungan
