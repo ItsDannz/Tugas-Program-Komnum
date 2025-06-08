@@ -11,6 +11,15 @@
 
 <br>
 
+### Soal
+
+Diketahui f(x) = x ^ 3 + 6x ^ 2 - 19x - 84. Diketahui: 
+Batas bawah (XL) = - 4 
+Batas atas (Xu) = 3 
+Nilai X sebenarnya = -3 
+Cari akar x dengan menggunakan metoda bagi dua 
+[Lakukan iterasi sampai 0 <= Et < 1 Print semua iterasinya
+
 #### Full Code
 ```python
 from decimal import Decimal, ROUND_HALF_UP
