@@ -13,12 +13,19 @@
 
 ### Soal
 
-Diketahui f(x) = x ^ 3 + 6x ^ 2 - 19x - 84. Diketahui: 
+Diketahui f(x) = x ^ 3 + 6x ^ 2 - 19x - 84. Diketahui:
+<br>
 Batas bawah (XL) = - 4 
+<br>
 Batas atas (Xu) = 3 
+<br>
 Nilai X sebenarnya = -3 
+<br>
 Cari akar x dengan menggunakan metoda bagi dua 
+<br>
 [Lakukan iterasi sampai 0 <= Et < 1 Print semua iterasinya
+
+<br>
 
 #### Full Code
 ```python
