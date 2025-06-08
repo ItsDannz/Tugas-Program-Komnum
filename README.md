@@ -173,3 +173,9 @@ Diketahui dari soal
 bagi_dua(xl, xu, xt)
 ```
 Memanggil fungsi `bagi_dua` untuk memulai perhitungan
+
+<br>
+
+#### Output
+![image](https://github.com/user-attachments/assets/fc9a9ef4-4034-4dd4-92e3-d6064166f15b)
+
